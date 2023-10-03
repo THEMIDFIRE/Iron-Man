@@ -1,0 +1,55 @@
+@keyframes Header {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ShowNav {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: initial;
+        transform: translateY(0);
+    }
+}
+
+@keyframes HideNav {
+    from {
+        opacity: initial;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes SlideRight {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes img {
+    from {
+        transform: scale(.7);
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
