@@ -1,56 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- Stylesheet -->
-        <link rel="stylesheet" href="style.css">
-
-        <!-- BootStrap 5  -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
-        <title>Iron man</title>
-    </head>
-    <body>
-        <!-- Nav bar -->
-        <header>
-            <nav id="nav">
-                <img src="assets/marvel.png" alt="Logo" class="logo">
-                <input type="checkbox" id="menu" checked>
-                <label for="menu"></label>
-                <ul class="menu-items">
-                    <li class="item"><a href="#trailers" class="nav-link">Trailers</a></li>
-                    <li class="item"><a href="#landing" class="nav-link">Iron Man</a></li>
-                    <li class="item"><a href="#gallery" class="nav-link">Gallery</a></li>
-                    <li class="item"><a href="#about" class="nav-link">About</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- Main Content -->
-        <div id="slider">
-            <ul class="list-group">
-                <li><a href="#landing" class="nav-link">01</a></li>
-                <li><a href="#trailers" class="nav-link">02</a></li>
-                <li><a href="#gallery" class="nav-link">03</a></li>
-            </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My name is Mohamed Magdy, I'm a front-end web developer and this is my portfolio that I made from scratch with pure CSS3 even though I know BootStrap but I wanted to do that so I can have more fun doing what I love the best">
+  <!-- Tab color for Mobile devices -->
+  <meta name="theme-color" content="#12130F">
+  <!-- Favicon icon -->
+  <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- responsive stylesheet -->
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Animations -->
+  <link rel="stylesheet" href="css/animation.css">
+  <!-- Fontawesome icon pack -->
+  <script src="https://kit.fontawesome.com/c1bb2678a4.js" crossorigin="anonymous"></script>
+  <title>Mohamed Magdy</title>
+</head>
+<body>
+  <header>
+    <div class="brandName">
+      <a href="#" class="name">Mohamed</a>
+    </div>
+    <input type="checkbox" id="menu">
+    <label for="menu">
+      <div id="line-1"></div>
+      <div id="line-2"></div>
+      <div id="line-3"></div> 
+    </label>
+    <nav>
+      <ul class="menu-items">
+        <li><a href="#about" class="link">About</a></li>
+        <li><a href="#services" class="link">Services</a></li>
+        <li><a href="#projects" class="link">Projects</a></li>
+        <li><a href="#contact" class="link">Get in touch</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="landing">
+      <div class="container">
+          <div class="ld">
+            <h3>Hello,</h3>
+            <h1>I&#39m <span>Mohamed Magdy,</span></h1>
+            <h2>Front-end web developer</h2>
+            <p>Freelancer based in Egypt</p>
+            <div class="btns">
+              <a href="#contact" class="contact btn">Get in touch</a>
+              <a href="#projects" class="projects btn">Projects</a>
+            </div>
+            <div class="social">
+              <a href="https://github.com/THEMIDFIRE" title="Github" class="icon"><i class="brand fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/themidfire" title="Linkedin" class="icon"><i class="brand fab fa-linkedin"></i></a>
+              <a href="https://twitter.com/THEMIDFIRE" title="Twitter" class="icon"><i class="brand fab fa-twitter"></i></a>
+              <a href="https://www.facebook.com/TH3MIDFIRE" title="Facebook" class="icon"><i class="brand fab fa-facebook"></i></a>
+              <a href="https://instagram.com/themidfire.dev" title="Instagram" class="icon"><i class="brand fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="rt">
+            <img src="imgs/me.png" alt="A picture of me just smiling" id="me">
+          </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <h3 class="title">About me</h3>
+        <div class="lt">
+          <div>
+            <img src="imgs/mee.jpg" alt="Cool picture of me">
+          </div>
         </div>
-        <main data-bs-spy="scroll" data-bs-target="#slider">
-            <section id="landing">
-                <div class="cont">
-                    <img src="assets/title.png" alt="title" class="">
-                    <p class="">Iron Man is a 2008 American superhero film based on the Marvel Comics character of the same name.</p>
-                    <a href="#about">More</a>
-                </div>
-            </section>
-            <section id="about"></section>
-            <section id="trailers"></section>
-            <section id="gallery"></section>
-        </main>
-        <!-- Footer -->
-        <footer>
-
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    </body>
+        <div class="rd">
+          <p class="description">I&#39m a Passionate, Self-taught front-end web developer who loves to code and have fun with the process with the continuous learning and improvemnt in this field</p>
+          <div id="info">
+            <div id="name">
+              <h4>Name</h4>
+              <p>Mohamed Magdy</p>
+            </div>
+            <div id="email">
+              <h4>Email</h4>
+              <p>2l6s2@example.com</p>
+            </div>
+            <div id="phone">
+              <h4>Phone</h4>
+              <p>(+20)1030356638</p>
+            </div>
+            <div id="address">
+              <h4>Address</h4>
+              <p>Egypt, Giza</p>
+            </div>
+          </div>
+          <div id="skills">
+            <i class="fa fa-html5 icon" title="HTML"></i>
+            <i class="fa fa-css3 icon" title="CSS"></i>
+            <i class="fab fa-js icon" title="JavaScript"></i>
+            <i class="fab fa-bootstrap icon" title="BootStrap"></i>
+            <i class="fab fa-sass icon" title="Sass"></i>
+          </div>
+          <div id="helper">
+            <i class="fa fa-info"></i>
+            <p id="help">Hover over the icons to know the names</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="marquee">
+      <marquee>eat.code.sleep.repeat</marquee>
+      <marquee>eat.code.sleep.repeat</marquee>
+    </div>
+    <section id="services">
+      <div class="container">
+        <h3 class="title">What I offer</h3>
+        <div id="cards">
+          <div class="card">
+            <i class="fa fa-desktop" aria-hidden="true"></i>
+            <h5 class="card-title">Responsive Web</h5>
+            <p class="card-description">Your site is built responsive to adapt to different screen sizes.</p>
+          </div>
+          <div class="card">
+            <i class="fa fa-headset" aria-hidden="true"></i>
+            <h5 class="card-title">Customer Service</h5>
+            <p class="card-description">Customer support on finished websites. Includes fixing bugs and updating code.</p>
+          </div>
+          <div class="card">
+            <i class="fab fa-searchengin" aria-hidden="true"></i>
+            <h5 class="card-title">SEO Optimization</h5>
+            <p class="card-description">Analyzing and improving your website's visiblity in search engines.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container">
+        <h3 class="title">Projects</h3>
+        <div id="repoInfo">
+          <p>Total repositories: <span id="total"></span></p>
+          <p>Visible repositories: <span id="visible"></span></p>
+        </div>
+        <p id="rateLimitMessage"></p>
+        <p id="errorMessage"></p>
+        <div id="projectInfo">
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <h3 class="title">Contact Me</h3>
+        <!--a working contact form that sends email  -->
+        <div class="social">
+          <a href="mailto:2l6s2@example.com" title="Email" class="icon"><i class="brand fas fa-envelope"></i></a>
+          <a href="tel:+201030356638" title="Phone" class="icon"><i class="brand fas fa-phone"></i></a>
+          <a href="https://github.com/THEMIDFIRE" title="Github" class="icon"><i class="brand fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/mohamed-magdy/" title="LinkedIn" class="icon"><i class="brand fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/TH3MIDFIRE" title="Facebook" class="icon"><i class="brand fab fa-facebook"></i></a>
+          <a href="https://instagram.com/themidfire.dev" title="Instagram" class="icon"><i class="brand fab fa-instagram"></i></a>
+          <a href="https://twitter.com/THEMIDFIRE" title="Twitter" class="icon"><i class="brand fab fa-twitter"></i></a>
+        </div>
+        <form action="email.php" method="post" class="email">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="tel" name="phone" placeholder="Phone" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="text" name="subject" placeholder="Subject" required>
+          <textarea name="message" placeholder="Message" minlength="10" required></textarea>
+          <input type="submit" value="Send">
+        </form>
+    </div>
+      </div>
+    </section>
+  </main>
+  <div id="stt">
+    <a href="#" id="scroll-to-top"><i class="fa fa-arrow-up"></i></a>
+  </div>
+  <footer>
+    <p>Made with ♥</p>
+  </footer>
+  <script src="js/jquery/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
 </html>
